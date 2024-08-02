@@ -51,11 +51,11 @@ end
 group(:development, :test) do
   gem "rake"
   gem "rspec"
-  gem "webmock"
+  gem "webmock", ">= 3.20.0"
   gem "fauxhai-ng" # for chef-utils gem
 end
 
-gem "chefstyle"
+gem "chefstyle", ">= 2.2.3"
 # group(:chefstyle) do
 #   # for testing new chefstyle rules
 #   gem "chefstyle", git: "https://github.com/chef/chefstyle.git", branch: "main"

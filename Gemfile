@@ -13,7 +13,7 @@ gem "chef-config", path: File.expand_path("chef-config", __dir__) if File.exist?
 
 # required for FIPS or bundler will pick up default openssl
 install_if -> { !Gem.platforms.any? { |platform| !platform.is_a?(String) && platform.os == "darwin" } } do
-  gem "openssl", "= 3.2.0"
+  gem "openssl", "= 3.3.0"
 end
 
 # since we are using ruby 3.1.x, rdoc needs to be on 6.4.1.1 so we use this
